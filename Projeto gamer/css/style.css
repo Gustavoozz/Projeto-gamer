@@ -1,4 +1,10 @@
 /* Imports de fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Quicksand&family=Titillium+Web:wght@300&display=swap');
+
+/* font-family: 'Inter', sans-serif; */
+/* font-family: 'Titillium Web', sans-serif; */
+/* font-family: 'Quicksand', sans-serif; */
+
 
 /* Reset CSS */
 
@@ -8,11 +14,86 @@
     box-sizing: border-box;
 }
 
+/* Classes genéricas */
+.layout-grid {
+    width: 90%;
+    height: 100%;
+    border: 1px solid red;
+    margin: 0 auto;
+}
+
+.alinhamento-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
 body {
     background-color: white;
 }
 
+/* Mobile first */
 /* Header */
 header {
     background-color: #181426;
+    height: 60px;
 }
+
+
+/* Header top icons */
+header .phone {
+    color: white;
+    font-family: 'Inter';
+    
+}
+
+
+header .mail {
+    color: white;
+    font-family: 'Inter';
+}
+
+
+header .header-top {
+    display: none;
+}
+
+
+header nav {
+    display: none;
+}
+
+
+header .menu-usuarios {
+    display: none;
+}
+
+
+header .header-bottom {
+    height: 60px;
+}
+
+
+header .logo {
+    width: 86px;
+    height: 25px;
+    
+}
+
+header nav {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 80vw;
+    height: 100vh;
+    background-color: gray;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
